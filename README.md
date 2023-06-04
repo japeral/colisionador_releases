@@ -5,9 +5,9 @@
 
 1. Clone Colisionador_releases repo $git clone https://www.github.com/japeral/colisionador_releases colisionador
 2. Execute ./download_latest_list.sh
+    - If permission errors, run $chmod 777 *.sh
 3. Rename the downloaded file to 'r160list_sorted.csv"
 4. Execute ./test.sh
-    - If permission errors, run $chmod 777 *.sh
     - Puzzle solutions to parts 1,2,3,4,5... will be stored in found.txt file.
 
 # Run instructions:

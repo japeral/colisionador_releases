@@ -23,32 +23,32 @@ To run in Windows host machines, enable WSL and Debian subsystem.
 1. Clone Colisionador_releases repo $git clone https://www.github.com/japeral/colisionador_releases colisionador
 2. $cd colisionador
 3. Execute ./download_latest_list.sh to get a copy of all the BTC addresses with balance at begining of May 2023.
-    - If permission errors, run $sudo chmod 777 *.sh
+    * If permission errors, run $sudo chmod 777 *.sh
 4. Rename the downloaded file to 'r160list_sorted.csv'
-    - This file has to have the entries sorted, or the binary search algorithm will not work well.
+    * This file has to have the entries sorted, or the binary search algorithm will not work well.
 5. Execute ./test.sh
-    - Search uses puzzle_r160list_sorted.csv addresses, and starts in private key 0 (all 256 bits 0), with only one thread.
-    - If everything is all right you should be finding the easiest pieces of the puzzle stright away. 
-    - Private keys will be stored in found.txt file.
-    - Yes this really works, you see?
+    * Search uses puzzle_r160list_sorted.csv addresses, and starts in private key 0 (all 256 bits 0), with only one thread.
+    * If everything is all right you should be finding the easiest pieces of the puzzle stright away. 
+    * Private keys will be stored in found.txt file.
+    * Yes this really works, you see?
 
 ## Run instructions:
 To start colliding for puzzle 66 private key execute$ ./start.sh 
-    - If permission errors, run $sudo chmod 777 colisionador*
-    - If interested to search another piece, edit the -puzzle parameter inside the .sh file.
+    * If permission errors, run $sudo chmod 777 colisionador*
+    * If interested to search another piece, edit the -puzzle parameter inside the .sh file.
 
 ## Additional binary parameters
 $./colisionador_x86_64 --help
 
 ## In case of finding some private key with balance:
-- Import the WIF into a fully synced Bitcoin Core node. 
-- If not sure how to do that, contact and attach the found.txt file at japeralsoler@gmail.com.
-- Transfer the balance to another BTC wallet where you control the private keys.
-- Please consider donating something to me, Thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
+* Import the WIF into a fully synced Bitcoin Core node. 
+* If not sure how to do that, contact and attach the found.txt file at japeralsoler@gmail.com.
+* Transfer the balance to another BTC wallet where you control the private keys.
+* Please consider donating something to me, Thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
 
 ## New features, improvements and Contact
-- If interested to add new features, please contact me by email at: japeralsoler@gmail.com
-- I am currently working to port the code to support GPU acceleration.
+* If interested to add new features, please contact me by email at: japeralsoler@gmail.com
+* I am currently working to port the code to support GPU acceleration.
 
 ## Benchmark
 |                           Hardware                            | Threads | Search speed keys/s |

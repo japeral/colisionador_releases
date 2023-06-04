@@ -54,10 +54,12 @@ $./colisionador_x86_64 --help
 # The Probability Maths...
 The mean time to find the private that opens Puzzle-66 by burteforce, with one CPU thread on an average personal computer @22K keys/s per thread is:
 
-Mean time = (Number of total combinations) / (search speed) = (2^65) / (22,000)
-Mean time ≈ 1.6779404 × 10^15 seconds
+Mean time = (Number of total combinations) / (search speed) = (2^65) / (22,000) ≈ 1.6779404 × 10^15 seconds
+
 To days: 1.6779404 × 10^15 s / (60 s * 60 min * 24 h) ≈ 1.9430023 × 10^10 days
+
 To Years: 1.9430023 × 10^10 days / 365 days ≈ 5.324932 × 10^7 years
+
 That means: 53,249,320,000 years
 
 So consider executing this binary some kind of lottery...

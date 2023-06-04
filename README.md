@@ -34,7 +34,6 @@ To run in Windows host machines, enable WSL and Debian subsystem.
 
 ## Run instructions:
 To start colliding for puzzle 66 private key execute$ ./start.sh 
-
     * If permission errors, run $sudo chmod 777 colisionador*
 
     * If interested to search another piece, edit the -puzzle parameter inside the .sh file.

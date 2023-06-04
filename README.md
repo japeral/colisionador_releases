@@ -16,7 +16,8 @@ This way, puzzle-66 will have a private key that have bit 66 to 1, and the low s
 File puzzle_r160list_sorted contains all the addresses of the puzzle (even the ones with 0 Balance currently).
 
 ## Setup instructions:
-This are Linux-64 bits bineries, compiled in Debian / Raspbian systems. 
+This are Linux-64 bits bineries, compiled in Debian / Raspbian systems.
+
 To run in Windows host machines, enable WSL and Debian subsystem.
 
 1. Clone Colisionador_releases repo $git clone https://www.github.com/japeral/colisionador_releases colisionador

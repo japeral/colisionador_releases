@@ -1,6 +1,6 @@
 # Colisionador, by Jose Peral
 
-# What is the BTC puzzle?
+## What is the BTC puzzle?
 It is an eastern egg inside BTC blockchain, someone sent arround 65.8 BTC to 127 addresses (puzzle pieces) over the time.
 This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy8xtddvcGrEhUUCZDQ9QqdRfKh697F
 
@@ -15,7 +15,7 @@ This way, puzzle-66 will have a private key that have bit 66 to 1, and the low s
 
 File puzzle_r160list_sorted contains all the addresses of the puzzle (even the ones with 0 Balance currently).
 
-# Setup instructions:
+## Setup instructions:
 1. Clone Colisionador_releases repo $git clone https://www.github.com/japeral/colisionador_releases colisionador
 2. Execute ./download_latest_list.sh to get a copy of all the BTC addresses with balance at begining of May 2023.
     - If permission errors, run $chmod 777 *.sh
@@ -26,32 +26,32 @@ File puzzle_r160list_sorted contains all the addresses of the puzzle (even the o
     - If everything is all right you should be finding the easiest pieces of the puzzle stright away. 
     - Private keys will be stored in found.txt file.
 
-# Run instructions:
+## Run instructions:
 To start colliding for puzzle 66 private key execute$ ./run.sh 
     - If permission errors, run $chmod 777 *.sh
     - If interested to search another piece, edit the -puzzle parameter inside the .sh file.
 
-# Additional binary parameters
+## Additional binary parameters
 $./colisionador_x86_64 --help
 
-# In case of finding some private key with balance:
+## In case of finding some private key with balance:
 - Import the WIF into a fully synced Bitcoin Core node. 
 - If not sure how to do that, contact and attach the found.txt file at japeralsoler@gmail.com.
 - Transfer the balance to another BTC wallet where you control the private keys.
 - Please consider donating something to me, Thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
 
-# New features, improvements and Contact
+## New features, improvements and Contact
 - If interested to add new features, please contact me by email at: japeralsoler@gmail.com
 - I am currently working to port the code to support GPU acceleration.
 
-# Benchmark
+## Benchmark
 |                           Hardware                            | Threads | Search speed keys/s |
 | :-------------------------------------------------------------| :-----: | :-----------------: |
 | Raspberry pi 4B [ARM v7 (4 core) - 64bit linux os @ 1900Mhz]  |    8    |         33K         |
 | Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    |   24    |        249K         |
-| Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12Logical)       |   24    |        220K         | 
+| Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      |   24    |        220K         | 
 
-# The Probability Maths...
+## The Probability Maths...
 The mean time to find the private that opens Puzzle-66 by burteforce, with one CPU thread on an average personal computer @22K keys/s per thread is:
 
 Mean time = (Number of total combinations) / (search speed) = (2^65) / (22,000) ≈ 1.6779404 × 10^15 seconds

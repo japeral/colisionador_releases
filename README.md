@@ -6,7 +6,7 @@ This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.
 
-The particularity of this puzzle is the difficulty to find the private key by brute force, doubles with each piece of the puzzle, as the private key doubles in lenght. 
+The particularity of this puzzle is the difficulty to find the private key by brute force, doubles with each piece of the puzzle, as the private key increases one bit in lenght (doubling the difficulty).
 
 Currently the easiest puzzle piece with balance is puzzle-66 piece. This is the address, Balance is 6.60 BTC: 
 https://www.blockchain.com/explorer/addresses/BTC/13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so
@@ -29,7 +29,9 @@ File puzzle_r160list_sorted contains all the addresses of the puzzle (even the o
 
 ## Run instructions:
 To start colliding for puzzle 66 private key execute$ ./start.sh 
+
     - If permission errors, run $sudo chmod 777 colisionador*
+
     - If interested to search another piece, edit the -puzzle parameter inside the .sh file.
 
 ## Additional binary parameters

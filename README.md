@@ -39,7 +39,7 @@ To run in Windows host machines, enable WSL and Debian subsystem.
 ```
     mv 'uc...' r160list_sorted.csv
 ```
-    * This file has to have the entries sorted, or the binary search algorithm will not work well.
+* This file has to have the entries sorted, or the binary search algorithm will not work well.
 
 4. Execute Test
 ```

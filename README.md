@@ -100,12 +100,12 @@ $./colisionador_x86_64 --help
 
 ## BINGO! (In rare case of finding some private key with balance):
 * Import the WIF into a fully synced Bitcoin Core node. 
-* If not sure how to do that, contact and attach the found.txt file at japeralsoler@gmail.com.
+* If not sure how to do that, contact me by email (japeralsoler@gmail.com) attaching the 'found.txt' file.
 * Transfer the balance to another BTC wallet where you control the private keys.
 * Please consider donating something to me, thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
 
 ## New features, improvements and Contact
-* If interested to add new features, please contact me by email at: japeralsoler@gmail.com
+* If interested to add new features, please contact me by email (japeralsoler@gmail.com)
 * I am currently working to port the code to support GPU acceleration.
 
 ## Benchmark

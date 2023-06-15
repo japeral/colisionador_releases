@@ -6,13 +6,13 @@ This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.
 
-*Puzzle #1 [1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH](https://www.blockchain.com/es/explorer/addresses/BTC/1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH) - Balance = 0.1 BTC - private key lenght 1 bit.
+* Puzzle #1 [1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH](https://www.blockchain.com/es/explorer/addresses/BTC/1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH) - Balance = 0.1 BTC - private key lenght 1 bit.
 
-*Puzzle #2 [1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb](https://www.blockchain.com/es/explorer/addresses/BTC/1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb) - Balance = 0.2 BTC - private key lenght 2 bit.
+* Puzzle #2 [1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb](https://www.blockchain.com/es/explorer/addresses/BTC/1CUNEBjYrCn2y1SdiUMohaKUi4wpP326Lb) - Balance = 0.2 BTC - private key lenght 2 bit.
 
-*Puzzle #3 [19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA](https://www.blockchain.com/es/explorer/addresses/BTC/19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA)- Balance = 0.4 BTC - private key lenght 3 bit...
+* Puzzle #3 [19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA](https://www.blockchain.com/es/explorer/addresses/BTC/19ZewH8Kk1PDbSNdJ97FP4EiCjTRaZMZQA)- Balance = 0.4 BTC - private key lenght 3 bit...
 
-*Puzzle #66 [13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so]https://www.blockchain.com/es/explorer/addresses/BTC/13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so) - Balance = 6.6 BTC - private key lenght 66 bit...
+* Puzzle #66 [13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so]https://www.blockchain.com/es/explorer/addresses/BTC/13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so) - Balance = 6.6 BTC - private key lenght 66 bit...
 
 The particularity of this puzzle is the difficulty to find the private key by brute force, doubles with each piece of the puzzle, as the private key increases one bit in lenght (doubling the difficulty).
 

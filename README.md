@@ -42,6 +42,7 @@ To run in Windows host machines, enable WSL and Debian subsystem.
 * This file has to have the entries sorted, or the binary search algorithm will not work well.
 
 4. Execute Test
+
 Linux
 ```
 ./test.sh

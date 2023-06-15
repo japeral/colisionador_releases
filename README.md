@@ -80,7 +80,7 @@ $./colisionador_x86_64 --help
 ```
 -threads xx
 ```
--puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized.
+-puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized. If specified to 0, search will target the the 256bit seach space.
 ```
 -puzzle 66
 ```

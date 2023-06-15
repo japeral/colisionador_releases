@@ -73,7 +73,7 @@ $./colisionador_x86_64 --help
 -puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized.
 ```
 -puzzle 66
-
+```
 -rand_pk parameter: jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
 ```
 -rand_pk,    

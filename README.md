@@ -1,7 +1,7 @@
 # Colisionador, by Jose Peral
 
 ## What is the BTC puzzle?
-It is an eastern egg inside BTC blockchain, someone sent arround 65.8 BTC to 127 addresses (puzzle pieces) over the time.
+It is an eastern egg inside BTC blockchain, someone sent arround 65.8 BTC to 256 addresses (puzzle pieces) over the time.
 This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy8xtddvcGrEhUUCZDQ9QqdRfKh697F
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.

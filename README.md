@@ -76,7 +76,7 @@ $./colisionador_x86_64 --help
 ```
 -rand_pk parameter: jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
 ```
--rand_pk,    
+-rand_pk
 ```
 -Start_pk_bit parameter: Starts searching at the specified private key
 ```

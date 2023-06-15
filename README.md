@@ -74,7 +74,7 @@ For the complete list just use the --help parameter.
 ```
 $./colisionador_x86_64 --help
 ```
---threads xx parameter: where xx is the number of threads to use, if not specified, uses all the available.
+-threads xx parameter: where xx is the number of threads to use, if not specified, uses all the available.
 ```
 -threads xx
 ```

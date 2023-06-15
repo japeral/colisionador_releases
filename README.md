@@ -82,10 +82,11 @@ $./colisionador_x86_64 --help
 ```
 -threads xx
 ```
--puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized. If specified to 0, search will target the the 256bit seach space.
+-puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized. If specified to 255, search will target the the 256bit seach space.
 ```
--puzzle 66
+-puzzle 255
 ```
+![puzzle-255](puzzle-255.png)
 -rand_pk parameter: jumps to anothre random pk address after PrivKey byte[29] overflow, jumps are OFF by default.
 ```
 -rand_pk

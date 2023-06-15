@@ -32,12 +32,11 @@ To run in Windows host machines, enable WSL and Debian subsystem.
 
 3 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023, and rename it to 'r160list_sorted.csv'
 [Download](https://drive.google.com/file/d/1ppTbtCUtVbvwgViI1CVzXHKFTteLEMej/view)
-[Enlace a Google](https://www.google.com)
 ```
     $./download_latest_list.sh
     $mv 'uc...' r160list_sorted.csv    
 ```
-* This file has to have the entries sorted, or the binary search algorithm will not work well.
+* If you want to make your own file, it has to have the all entries sorted by the ripedmd160, or the binary search algorithm will not work well.
 
 4. Execute Test
 

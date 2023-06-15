@@ -69,6 +69,8 @@ start.bat
 ```
 * If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
 
+![Puzzle66-10threads](puzzle66-10threads.png)
+
 ## Binary additional parameters
 For the complete list just use the --help parameter.
 ```

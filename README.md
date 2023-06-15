@@ -66,10 +66,22 @@ To start colliding for puzzle 66 private key execute$ ./start.sh (Linux) or star
 ```
 $./colisionador_x86_64 --help
 ```
--threads xx, where xx is the number of threads to use, if not specified, uses all the available.
--puzzle 66,  specifies with puzzle bit to collide.
--rand_pk,    jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
--start_pk_bin 0000000000000000000000000000000000000000000000000000000000000001, Starts searching at the specified private key
+--threads where xx is the number of threads to use, if not specified, uses all the available.
+```
+-threads xx
+```
+-puzzle parameter: specifies with puzzle bit to collide, lower bits are randomized.
+```
+-puzzle 66
+
+-rand_pk parameter: jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
+```
+-rand_pk,    
+```
+-Start_pk_bit parameter: Starts searching at the specified private key
+```
+-start_pk_bin 0000000000000000000000000000000000000000000000000000000000000001
+```
 
 ## In case of finding some private key with balance:
 * Import the WIF into a fully synced Bitcoin Core node. 

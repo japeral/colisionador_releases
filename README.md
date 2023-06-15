@@ -6,12 +6,13 @@ This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.
 
-Puzzle #1 - Balance = 0.1 BTC - private key lenght 1 bit.
-Puzzle #2 - Balance = 0.2 BTC - private key lenght 2 bit.
-Puzzle #3 - Balance = 0.4 BTC - private key lenght 3 bit.
-...
-Puzzle #66 - Balance = 6.6 BTC - private key lenght 66 bit.
-...
+*Puzzle #1 - Balance = 0.1 BTC - private key lenght 1 bit.
+
+*Puzzle #2 - Balance = 0.2 BTC - private key lenght 2 bit.
+
+*Puzzle #3 - Balance = 0.4 BTC - private key lenght 3 bit...
+
+*Puzzle #66 - Balance = 6.6 BTC - private key lenght 66 bit...
 
 The particularity of this puzzle is the difficulty to find the private key by brute force, doubles with each piece of the puzzle, as the private key increases one bit in lenght (doubling the difficulty).
 

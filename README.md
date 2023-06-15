@@ -80,7 +80,7 @@ $./colisionador_x86_64 --help
 ```
 -single
 ```
--Start_pk_bit parameter: Starts searching at the specified private key
+-start_pk_bin parameter: Starts searching at the specified private key
 ```
 .\colisionador_x86_64.exe -start_pk_bin 000000000000000000000000000000000000000000000000000000000000c936
 ```

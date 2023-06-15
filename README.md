@@ -16,7 +16,7 @@ This way, puzzle-66 will have a private key that have bit 66 to 1, and the low s
 File puzzle_r160list_sorted contains all the addresses of the puzzle (even the ones with 0 Balance currently).
 
 ## Setup instructions:
-This are 64 bits binareis for Windows X86_64, and Unix X86_64 and ARMv7l.
+This are 64 bits binaries for Windows X86_64, and Unix X86_64 and ARMv7l.
 
 To run in Windows host machines, enable WSL and Debian subsystem.
 
@@ -36,9 +36,9 @@ To run in Windows host machines, enable WSL and Debian subsystem.
     $./download_latest_list.sh
     $mv 'uc...' r160list_sorted.csv    
 ```
-* If you want to make your own file, it has to have the all entries sorted by the ripedmd160, or the binary search algorithm will not work well.
+* If you want to make your own file, it has to have the all entries sorted by the ripemd160, or the binary search algorithm will not work well.
 
-4. Execute Test
+4. Test
 
 Linux
 ```
@@ -55,8 +55,16 @@ test.bat
 * Do you see? This really works.
 
 ## Run instructions:
-To start colliding for puzzle 66 private key execute$ ./start.sh (Linux) or start.bat (Windows)
+To start colliding for puzzle 66 private key execute:
+Linux
+```
+$ ./start.sh
+```
 * If permission errors, run $sudo chmod 777 colisionador*
+Windows
+```
+start.bat
+```
 * If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
 
 ## Binary additional parameters

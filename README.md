@@ -56,11 +56,13 @@ test.bat
 
 ## Run instructions:
 To start colliding for puzzle 66 private key execute:
+
 Linux
 ```
 $ ./start.sh
 ```
 * If permission errors, run $sudo chmod 777 colisionador*
+
 Windows
 ```
 start.bat

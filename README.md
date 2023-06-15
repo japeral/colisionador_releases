@@ -50,7 +50,7 @@ test.bat
 ```
 
 * Test uses puzzle_r160list_sorted.csv addresses, and starts searching in the specified private key 1 with only one thread.
-* If everything is all right you should be finding puzzle #1 piece stright away. Remove -single parameter to keep searching all the range up. 
+* If everything is all right you should be finding puzzle #1 piece stright away.
 * Private keys will be stored in 'found.txt' file.
 * Do you see? This really works.
 

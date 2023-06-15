@@ -113,11 +113,13 @@ $./colisionador_x86_64 --help
 * I am currently working to port the code to support GPU acceleration.
 
 ## Benchmark
-|                           Hardware                            |  OS  | Threads | Search speed keys/s |
+|                           Hardware                            |  OS  | Threads| Search speed keys/s |
 | :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
 | Raspberry pi 4B [ARM v7 (4 core) - 64bit linux os @ 2000Mhz]  | Unix |    4   |         32K         |
 | Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    | Unix |   10   |        249K         |
 | Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      | Unix |   12   |        220K         | 
+| Intel® Core™ i9-9900K @ 3.60GHz, (8 cores - 16 logical)       | Win10|   16   |        378K         | 
+| Intel® Core™ i9-10900K @ 3.70GHz, (10 cores - 20 logical)     | Win10|   20   |        489K         | 
 
 ## The Probability Maths...
 The mean time to find the private that opens Puzzle-66 by burteforce, with one CPU thread on an average personal computer @22K keys/s per thread is:

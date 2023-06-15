@@ -16,29 +16,38 @@ This way, puzzle-66 will have a private key that have bit 66 to 1, and the low s
 File puzzle_r160list_sorted contains all the addresses of the puzzle (even the ones with 0 Balance currently).
 
 ## Setup instructions:
-This are Linux-64 bits bineries, compiled in Debian / Raspbian systems.
+This are 64 bits binareis for Windows X86_64, and Unix X86_64 and ARMv7l.
 
 To run in Windows host machines, enable WSL and Debian subsystem.
 
-1. Clone Colisionador_releases repo $git clone https://www.github.com/japeral/colisionador_releases colisionador
-2. $cd colisionador
-3. Execute ./download_latest_list.sh to get a copy of all the BTC addresses with balance at begining of May 2023.
-    * If permission errors, run $sudo chmod 777 *.sh
-4. Rename the downloaded file to 'r160list_sorted.csv'
+1. Clone Colisionador_releases repo 
+    $git clone https://www.github.com/japeral/colisionador_releases colisionador
+
+2. Access the folder
+    $cd colisionador
+
+3.1 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023.
+    $./download_latest_list.sh
+
+3.1 Rename the downloaded file to 'r160list_sorted.csv'
     * This file has to have the entries sorted, or the binary search algorithm will not work well.
-5. Execute ./test.sh
+
+4. Execute ./test.sh
     * Search uses puzzle_r160list_sorted.csv addresses, and starts in private key 0 (all 256 bits 0), with only one thread.
     * If everything is all right you should be finding the easiest pieces of the puzzle stright away. 
-    * Private keys will be stored in found.txt file.
+    * Private keys will be stored in 'found.txt' file.
     * Yes this really works, you see?
 
 ## Run instructions:
-To start colliding for puzzle 66 private key execute$ ./start.sh
+To start colliding for puzzle 66 private key execute$ ./start.sh (Linux) or start.bat (Windows)
 * If permission errors, run $sudo chmod 777 colisionador*
-* If interested to search another piece, edit the -puzzle parameter inside the .sh file.
+* If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
 
 ## Additional binary parameters
 $./colisionador_x86_64 --help
+-threads xx, where xx is the number of threads to use, if not specified, uses all the available.
+-puzzle 66,  specifies with puzzle bit to collide.
+-rand_pk,    jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
 
 ## In case of finding some private key with balance:
 * Import the WIF into a fully synced Bitcoin Core node. 

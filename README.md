@@ -6,6 +6,13 @@ This is the transaction: https://www.blockchain.com/explorer/addresses/BTC/1Czoy
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.
 
+Puzzle #1 - Balance = 0.1 BTC - private key lenght 1 bit.
+Puzzle #2 - Balance = 0.2 BTC - private key lenght 2 bit.
+Puzzle #3 - Balance = 0.4 BTC - private key lenght 3 bit.
+...
+Puzzle #66 - Balance = 6.6 BTC - private key lenght 66 bit.
+...
+
 The particularity of this puzzle is the difficulty to find the private key by brute force, doubles with each piece of the puzzle, as the private key increases one bit in lenght (doubling the difficulty).
 
 Currently the easiest puzzle piece with balance is puzzle-66 piece. This is the address, Balance is 6.60 BTC: 
@@ -102,7 +109,7 @@ $./colisionador_x86_64 --help
 ```
 ![single+pkspecified.png](single+pkspecified.png)
 
-## BINGO! (In rare case of finding some private key with balance):
+## BINGO! (In the rare case of finding some private key with balance):
 * Import the WIF into a fully synced Bitcoin Core node. 
 * If not sure how to do that, contact me by email (japeralsoler@gmail.com) attaching the 'found.txt' file.
 * Transfer the balance to another BTC wallet where you control the private keys.
@@ -115,7 +122,7 @@ $./colisionador_x86_64 --help
 ## Benchmark
 |                           Hardware                            |  OS  | Threads| Search speed keys/s |
 | :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
-| Raspberry pi 4B [ARM v7 (4 core) - 64bit linux os @ 2000Mhz]  | Unix |    4   |         32K         |
+| Raspberry pi 4B ARM v7 @ 2000Mhz (4 core)                     | Unix |    4   |         32K         |
 | Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    | Unix |   10   |        249K         |
 | Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      | Unix |   12   |        220K         | 
 | Intel® Core™ i9-9900K @ 3.60GHz, (8 cores - 16 logical)       | Win10|   16   |        378K         | 

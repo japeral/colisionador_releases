@@ -118,4 +118,4 @@ So, consider executing this binary some kind of lottery...
 Good luck!
 
 ----------------------------------------------------------------
-BTC Donations: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
+BTC Donations: [bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj](https://www.blockchain.com/explorer/addresses/btc/bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj)

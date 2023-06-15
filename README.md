@@ -95,22 +95,22 @@ $./colisionador_x86_64 --help
 .\colisionador_x86_64.exe -start_pk_bin 000000000000000000000000000000000000000000000000000000000000c936
 ```
 
-## In case of finding some private key with balance:
+## BINGO! (In rare case of finding some private key with balance):
 * Import the WIF into a fully synced Bitcoin Core node. 
 * If not sure how to do that, contact and attach the found.txt file at japeralsoler@gmail.com.
 * Transfer the balance to another BTC wallet where you control the private keys.
-* Please consider donating something to me, Thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
+* Please consider donating something to me, thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
 
 ## New features, improvements and Contact
 * If interested to add new features, please contact me by email at: japeralsoler@gmail.com
 * I am currently working to port the code to support GPU acceleration.
 
 ## Benchmark
-|                           Hardware                            | Threads | Search speed keys/s |
-| :-------------------------------------------------------------| :-----: | :-----------------: |
-| Raspberry pi 4B [ARM v7 (4 core) - 64bit linux os @ 1900Mhz]  |    8    |         33K         |
-| Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    |   24    |        249K         |
-| Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      |   24    |        220K         | 
+|                           Hardware                            |  OS  | Threads | Search speed keys/s |
+| :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
+| Raspberry pi 4B [ARM v7 (4 core) - 64bit linux os @ 2000Mhz]  | Unix |    4   |         32K         |
+| Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    | Unix |   10   |        249K         |
+| Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      | Unix |   12   |        220K         | 
 
 ## The Probability Maths...
 The mean time to find the private that opens Puzzle-66 by burteforce, with one CPU thread on an average personal computer @22K keys/s per thread is:

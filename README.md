@@ -67,7 +67,7 @@ For the complete list just use the --help parameter.
 ```
 $./colisionador_x86_64 --help
 ```
---threads where xx is the number of threads to use, if not specified, uses all the available.
+--threads xx parameter: where xx is the number of threads to use, if not specified, uses all the available.
 ```
 -threads xx
 ```
@@ -75,17 +75,17 @@ $./colisionador_x86_64 --help
 ```
 -puzzle 66
 ```
--rand_pk parameter: jumps to anothre random pk address after byte[29] overflow, jumps are OFF by default.
+-rand_pk parameter: jumps to anothre random pk address after PrivKey byte[29] overflow, jumps are OFF by default.
 ```
 -rand_pk
 ```
--single Searches only for one private key, and shows the calculation and searching steps.
+-single parameter: Searches only for one private key, and shows the calculation and searching steps.
 ```
 -single
 ```
 -Start_pk_bit parameter: Starts searching at the specified private key
 ```
-.\colisionador_x86_64.exe -single -start_pk_bin 000000000000000000000000000000000000000000000000000000000000c936
+.\colisionador_x86_64.exe -start_pk_bin 000000000000000000000000000000000000000000000000000000000000c936
 ```
 
 ## In case of finding some private key with balance:

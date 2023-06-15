@@ -49,10 +49,10 @@ Windows
 test.bat
 ```
 
-* Search uses puzzle_r160list_sorted.csv addresses, and starts in private key 0 (all 256 bits 0), with only one thread.
-* If everything is all right you should be finding the easiest pieces of the puzzle stright away. 
+* Test uses puzzle_r160list_sorted.csv addresses, and starts searching in the specified private key 1 with only one thread.
+* If everything is all right you should be finding puzzle #1 piece stright away. Remove -single parameter to keep searching all the range up. 
 * Private keys will be stored in 'found.txt' file.
-* Yes this really works, you see?
+* Do you see? This really works.
 
 ## Run instructions:
 To start colliding for puzzle 66 private key execute$ ./start.sh (Linux) or start.bat (Windows)

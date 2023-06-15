@@ -35,15 +35,20 @@ To run in Windows host machines, enable WSL and Debian subsystem.
     $./download_latest_list.sh
 ```
 
-3.1 Rename the downloaded file to 'r160list_sorted.csv'
+3.1 (Optional) Rename the downloaded file to 'r160list_sorted.csv'
 ```
     mv 'uc...' r160list_sorted.csv
 ```
 * This file has to have the entries sorted, or the binary search algorithm will not work well.
 
 4. Execute Test
+Linux
 ```
 ./test.sh
+```
+Windows
+```
+test.bat
 ```
     * Search uses puzzle_r160list_sorted.csv addresses, and starts in private key 0 (all 256 bits 0), with only one thread.
     * If everything is all right you should be finding the easiest pieces of the puzzle stright away. 

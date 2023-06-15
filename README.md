@@ -96,6 +96,7 @@ $./colisionador_x86_64 --help
 ```
 .\colisionador_x86_64.exe -start_pk_bin 000000000000000000000000000000000000000000000000000000000000c936
 ```
+[single+pkspecified.png](single+pkspecified.png)
 
 ## BINGO! (In rare case of finding some private key with balance):
 * Import the WIF into a fully synced Bitcoin Core node. 

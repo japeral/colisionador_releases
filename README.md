@@ -30,7 +30,7 @@ To run in Windows host machines, enable WSL and Debian subsystem.
     $cd colisionador
 ```
 
-3.1 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023, and rename it to 'r160list_sorted.csv'
+3.1 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023, and rename it to ['r160list_sorted.csv'](drive.google.com/u/3/uc?id=1ppTbtCUtVbvwgViI1CVzXHKFTteLEMej&export=download&confirm=yes)
 ```
     $./download_latest_list.sh
     $mv 'uc...' r160list_sorted.csv    

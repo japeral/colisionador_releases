@@ -54,6 +54,8 @@ test.bat
 * Private keys will be stored in 'found.txt' file.
 * Do you see? This really works.
 
+![Test](test.png)
+
 ## Run instructions:
 To start colliding for puzzle 66 private key execute:
 

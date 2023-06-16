@@ -116,10 +116,6 @@ $./colisionador_x86_64 --help
 * Transfer the balance to another BTC wallet where you control the private keys.
 * Please consider donating something to me, thanks: bc1q7gn92ny4c7gd309phkmd24naw8rq2fend44mzj
 
-## New features, improvements and Contact
-* If interested to add new features, please contact me by email (japeralsoler@gmail.com)
-* I am currently working to port the code to support GPU acceleration.
-
 ## Benchmark
 |                           Hardware                            |  OS  | Threads| Search speed keys/s |
 | :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
@@ -141,6 +137,10 @@ To Years: 1.9430023 × 10^10 days / 365 days ≈ 5.324932 × 10^7 years
 That means: 53,249,320,000 years
 
 So, consider executing this binary some kind of lottery...
+
+## New features, improvements and Contact
+* If interested to add new features, please contact me by email (japeralsoler@gmail.com)
+* I am currently working to port the code to support GPU acceleration.
 
 Good luck!
 

@@ -120,6 +120,7 @@ $./colisionador_x86_64 --help
 |                           Hardware                            |  OS  | Threads| Search speed keys/s |
 | :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
 | Raspberry pi 4B ARM v7 @ 2000Mhz (4 core)                     | Unix |    4   |         32K         |
+| AMD Athlon(tm) X4 950 Quad Core (4 core - 4 logical)          | Win10|    4   |         81K         |
 | Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    | Unix |   10   |        249K         |
 | Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      | Unix |   12   |        220K         | 
 | Intel® Core™ i9-9900K @ 3.60GHz, (8 cores - 16 logical)       | Win10|   16   |        378K         | 

@@ -1,0 +1,1 @@
+./colisionador -list btc_r160list_sorted.csv -puzzle 66 -rand_pk -threads 10

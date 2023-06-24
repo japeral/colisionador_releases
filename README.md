@@ -19,21 +19,29 @@ The particularity of this puzzle is the difficulty to find the private key by br
 Currently the easiest puzzle piece with balance is puzzle-66 piece. This is the address, Balance is 6.60 BTC: 
 https://www.blockchain.com/explorer/addresses/BTC/13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so
 
-This way, puzzle-66 will have a private key that have bit 66 to 1, and the low significant bits unknown.
+This way, puzzle-66 will have a private key that have bit 66 to 1, and the low significant bits unknown that have to be cracked by brute force.
 
 File puzzle_r160list_sorted contains all the addresses of the puzzle (even the ones with 0 Balance currently).
 
 ## Setup instructions:
-This are 64 bits binaries for Windows X86_64, and Unix X86_64 and ARMv7l.
+This are 64 bits binaries for Windows X86_64, and Unix X86_64, Unix ARMv7l and native for Kinghts Corner x100 Xeon Phi Coprocesor.
 
-To run in Windows host machines, enable WSL and Debian subsystem.
+You can run the Linux binaries in a windows host machine enabling WSL and Debian subsystem.
 
-1. Clone Colisionador_releases repo 
+1. Clone Colisionador_releases repo. In case of Xeon Phi X100 CPU, clone in the host system.
 ```
     $git clone https://www.github.com/japeral/colisionador_releases colisionador
 ```
 
-2. Access the folder
+2a. In case of x100 Xeon Phi Coprocesor: open an ssh session to the card and:
+```
+	copy colisionador_releases folder from host to /root/ folder in Xeon Phi file system.
+	in /root/colisionador_releases/ $ chmod 777 *.sh
+	in /root/colisionador_releases/ $ chmod 777 colisionador_*
+	copy libiomp5.so from colisionador_releases to [root@mic0 ~]#/usr/lib64/libiomp5.so
+```
+
+2b. I case of Windows or Linux, access the folder:
 ```
     $cd colisionador
 ```
@@ -56,6 +64,10 @@ Windows
 ```
 test.bat
 ```
+Xeon Phi:
+```
+[root@mic0 ~]# ./colisionador_k1om-mpss.mic -list puzzle_r160list_sorted.csv -puzzle 0 -threads 1 -start_pk_bin 0000000000000000000000000000000000000000000000000000000000000001
+```
 
 * Test uses puzzle_r160list_sorted.csv addresses, and starts searching in the specified private key 1 with only one thread.
 * If everything is all right you should be finding puzzle #1 piece stright away.
@@ -77,6 +89,15 @@ Windows
 ```
 start.bat
 ```
+Xeon Phi
+```
+[root@mic0 ~]# cd /root/colisionador_releases
+[root@mic0 ~]# ./colisionador_k1om-mpss.mic -puzzle 66 -rand_pk
+or just
+$ ./start.sh
+```
+
+
 * If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
 
 ![Puzzle66-10threads](puzzle66-10threads.png)

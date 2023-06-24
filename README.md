@@ -93,10 +93,7 @@ Xeon Phi
 ```
 [root@mic0 ~]# cd /root/colisionador_releases
 [root@mic0 ~]# ./colisionador_k1om-mpss.mic -puzzle 66 -rand_pk
-or just
-$ ./start.sh
 ```
-
 
 * If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
 

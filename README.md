@@ -32,8 +32,15 @@ You can run the Linux binaries in a windows host machine enabling WSL and Debian
 ```
     $git clone https://www.github.com/japeral/colisionador_releases colisionador
 ```
+2 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023, and rename it to 'r160list_sorted.csv'
+[Download](https://drive.google.com/file/d/1ppTbtCUtVbvwgViI1CVzXHKFTteLEMej/view)
+```
+    $./download_latest_list.sh
+    $mv 'uc...' r160list_sorted.csv    
+```
+* If you want to make your own file, it has to have the all entries sorted by the ripemd160, or the binary search algorithm will not work well.
 
-2a. In case of x100 Xeon Phi Coprocesor: open an ssh session to the card and:
+3a. In case of x100 Xeon Phi Coprocesor: open an ssh session to the card and:
 ```
 	copy colisionador_releases folder from host to /root/ folder in Xeon Phi file system.
 	in /root/colisionador_releases/ $ chmod 777 *.sh
@@ -41,18 +48,10 @@ You can run the Linux binaries in a windows host machine enabling WSL and Debian
 	copy libiomp5.so from colisionador_releases to [root@mic0 ~]#/usr/lib64/libiomp5.so
 ```
 
-2b. I case of Windows or Linux, access the folder:
+3b. I case of Windows or Linux, access the folder:
 ```
     $cd colisionador
 ```
-
-3 (Optional) Download the latest list of BTC addresses with balance at begining of May 2023, and rename it to 'r160list_sorted.csv'
-[Download](https://drive.google.com/file/d/1ppTbtCUtVbvwgViI1CVzXHKFTteLEMej/view)
-```
-    $./download_latest_list.sh
-    $mv 'uc...' r160list_sorted.csv    
-```
-* If you want to make your own file, it has to have the all entries sorted by the ripemd160, or the binary search algorithm will not work well.
 
 4. Test
 
@@ -66,7 +65,7 @@ test.bat
 ```
 Xeon Phi:
 ```
-[root@mic0 ~]# ./colisionador_k1om-mpss.mic -list puzzle_r160list_sorted.csv -puzzle 0 -threads 1 -start_pk_bin 0000000000000000000000000000000000000000000000000000000000000001
+[root@mic0 ~]# ./test.sh
 ```
 
 * Test uses puzzle_r160list_sorted.csv addresses, and starts searching in the specified private key 1 with only one thread.
@@ -92,7 +91,7 @@ start.bat
 Xeon Phi
 ```
 [root@mic0 ~]# cd /root/colisionador_releases
-[root@mic0 ~]# ./colisionador_k1om-mpss.mic -puzzle 66 -rand_pk
+[root@mic0 ~]# ./start.sh
 ```
 
 * If interested to search another piece, edit the -puzzle parameter inside the .sh/.bat file.
@@ -137,12 +136,16 @@ $./colisionador_x86_64 --help
 ## Benchmark
 |                           Hardware                            |  OS  | Threads| Search speed keys/s |
 | :-------------------------------------------------------------| :--: |:-----: | :-----------------: |
-| Raspberry pi 4B ARM v7 @ 2000Mhz (4 core)                     | Unix |    4   |         32K         |
-| AMD Athlon(tm) X4 950 Quad Core (4 core - 4 logical)          | Win10|    4   |         81K         |
+| Raspberry Pi 4B ARMv7 @ 2000Mhz (4 cores)                     | Unix |    4   |         32K         |
+| AMD Athlon(tm) X4 950 Quad Core (4 cores - 4 logical)         | Win10|    4   |         81K         |
 | Intel® Xeon® E5-4627 v4 @ 2.60GHz, (10 cores - 10 logical)    | Unix |   10   |        249K         |
 | Intel® Core™ i7-10850H @ 2.70GHz, (6 cores - 12 logical)      | Unix |   12   |        220K         | 
 | Intel® Core™ i9-9900K @ 3.60GHz, (8 cores - 16 logical)       | Win10|   16   |        378K         | 
 | Intel® Core™ i9-10900K @ 3.70GHz, (10 cores - 20 logical)     | Win10|   20   |        489K         | 
+| Intel® Xeon Phi 31S1P @ 1.10GHz, (57 cores - 288 logical)     | Unix |  288   | 105K(30M)/108(256)  | 
+| Intel® Xeon Phi 31S1P @ 1.10GHz, (57 cores - 288 logical)     | Unix |  128   |  78K(30M)/80K(256)  | 
+| Intel® Xeon Phi 31S1P @ 1.10GHz, (57 cores - 288 logical)     | Unix |   57   |  79K(30M)/82K(256)  | 
+| Intel® Xeon Phi 31S1P @ 1.10GHz, (57 cores - 288 logical)     | Unix |   29   |  40K(30M)/42K(256)  | 
 
 ## The Probability Maths...
 The mean time to find the private that opens Puzzle-66 by burteforce, with one CPU thread on an average personal computer @22K keys/s per thread is:

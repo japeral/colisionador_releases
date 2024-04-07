@@ -1,8 +1,13 @@
 # Colisionador, by Jose Peral
 
+## What is Colisionador?
+Colisionador is a C++ program that searches for the private key of a BTC address by brute force. It uses the ripemd160 hash of the public key to search for the private key that generates the same hash. The program uses the OpenSSL library to generate the public key from the private key, and the ripemd160 hash of the public key. The search is done by incrementing the private key in a loop, generating the public key and the ripemd160 hash, and comparing it with the target address. The program uses all the available CPU threads to search for the private key, and it is optimized to use the maximum CPU resources available. The program is designed to be run in a Unix environment, but it can also be run in Windows and Xeon Phi coprocessor. It runs in solo mode, and it does not require any external server to coordinate the search. It can be considered like a lottery bitcoin wallet cracker.
+
 ## What is the BTC puzzle?
 It is an eastern egg inside BTC blockchain, someone sent arround 65.8 BTC to 256 addresses (puzzle pieces) over the time.
 This is the transaction: https://mempool.space/address/1Czoy8xtddvcGrEhUUCZDQ9QqdRfKh697F
+This is the thread in Bitcointalk: https://bitcointalk.org/index.php?topic=1306983.0
+This is another project that is trying to solve the puzzle they use a server to coordinate the clients: https://lbc.cryptoguru.org/trophies
 
 Each of the destination addresses have a balance that matches the puzzle pieces sequence order.
 

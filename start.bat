@@ -1,1 +1,1 @@
-colisionador_x86_64.exe -puzzle 66
+colisionador_x86_64.exe -puzzle 67 -rand_pk
